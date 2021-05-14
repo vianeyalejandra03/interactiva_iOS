@@ -59,10 +59,25 @@ class Principal extends StatelessWidget {
 
                 SizedBox(height: 16),
                 Container(
-                  padding: const EdgeInsets.all(16),
-                  color: Colors.teal,
-                  width: 500,
-                  height: 75,
+                  height: 100,
+                  width: 200,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.purple,
+                          width: 5.0,
+                        ),
+                      ),
+                      //! Change the Focused Border
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.purple,
+                          width: 5.0,
+                        ),
+                      ),
+                    ),
+                  ),
                 ), //container del cuadro de texto
                 SizedBox(height: 5),
                 Container(
