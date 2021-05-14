@@ -39,32 +39,28 @@ class Principal extends StatelessWidget {
                 //contenedor dentro del children
                 Container(
                   padding: const EdgeInsets.all(16),
-                  color: Colors.orange,
-                  width: 500,
-                  height: 75,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Container(
-                        color: Colors.red,
-                        width: 60,
-                        height: 55,
-                      ), //fin container rojo
-                      SizedBox(width: 16),
-                      Container(
-                        color: Colors.blue,
-                        width: 60,
-                        height: 55,
-                      ), //fin container azul
-                      SizedBox(width: 16),
-                      Container(
-                        color: Colors.green,
-                        width: 60,
-                        height: 55,
-                      ), //fin container verde
-                    ], //fin del widget[]
-                  ), //fin del row fin de fila 1
-                ), //fin del container naranja
+                  margin: EdgeInsets.only(
+                    top: 10.0,
+                    left: 10.0,
+                    right: 10.0,
+                  ),
+                  height: 200,
+                  width: 350,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/vianeyalejandra03/mis_imagenes/main/veterinaria1.jpg"), alignment: Alignment.topCenter),
+                    border: Border(
+                      top: BorderSide(
+                        color: Colors.white,
+                        width: 5.0,
+                      ),
+                      bottom: BorderSide(
+                        color: Colors.white,
+                        width: 5.0,
+                      ),
+                    ),
+                  ), //fin de el decoration box
+                ), //fin del container imagen
 
                 SizedBox(height: 16),
                 Container(
