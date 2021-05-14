@@ -34,7 +34,7 @@ class Principal extends StatelessWidget {
             height: 570,
             padding: const EdgeInsets.all(5),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 //contenedor dentro del children
                 Container(
