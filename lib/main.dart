@@ -25,7 +25,7 @@ class Principal extends StatelessWidget {
         centerTitle: true,
         title: Text('Registro De Mascotas'),
       ), //fin de appbar
-      body: Column(
+      body: Container(
         margin: EdgeInsets.only(
           top: 10.0,
           left: 10.0,
@@ -47,7 +47,7 @@ class Principal extends StatelessWidget {
             ),
           ),
         ), //fin de el decoration box
-      ), //column fin
+      ), //container fin
     ); //fin de scaffold
   } //widget fin
 } //fin class principal
