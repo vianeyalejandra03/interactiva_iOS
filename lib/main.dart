@@ -29,7 +29,7 @@ class Principal extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Container(
             //zona verde
-            color: Colors.greenAccent[400],
+            color: Colors.blue,
             width: 1000,
             height: 570,
             padding: const EdgeInsets.all(16),
