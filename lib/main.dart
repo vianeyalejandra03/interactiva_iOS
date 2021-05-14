@@ -63,17 +63,7 @@ class Principal extends StatelessWidget {
                   color: Colors.teal,
                   width: 500,
                   height: 75,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Container(color: Colors.green, width: 60, height: 55),
-                      SizedBox(width: 16),
-                      Container(color: Colors.blue, width: 60, height: 55),
-                      SizedBox(width: 16),
-                      Container(color: Colors.red, width: 60, height: 55),
-                    ],
-                  ),
-                ),
+                ), //container del cuadro de texto
                 SizedBox(height: 5),
                 Container(
                   padding: const EdgeInsets.all(16),
