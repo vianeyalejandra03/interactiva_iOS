@@ -72,7 +72,7 @@ class Principal extends StatelessWidget {
                       //! Change the Focused Border
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Colors.white,
+                          color: Colors.black,
                           width: 5.0,
                         ),
                       ),
