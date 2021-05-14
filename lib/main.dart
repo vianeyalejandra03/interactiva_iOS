@@ -47,7 +47,7 @@ class Principal extends StatelessWidget {
                   height: 200,
                   width: 350,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.blue,
                     image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/vianeyalejandra03/mis_imagenes/main/veterinaria1.jpg"), alignment: Alignment.topCenter),
                     border: Border(
                       top: BorderSide(
