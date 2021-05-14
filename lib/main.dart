@@ -39,7 +39,6 @@ class Principal extends StatelessWidget {
                 //contenedor dentro del children
                 Container(
                   padding: const EdgeInsets.all(16),
-
                   height: 200,
                   width: 350,
                   decoration: BoxDecoration(
@@ -75,7 +74,7 @@ class Principal extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 16),
+                SizedBox(height: 5),
                 Container(
                   padding: const EdgeInsets.all(16),
                   color: Colors.orange,
