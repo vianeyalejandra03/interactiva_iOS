@@ -26,30 +26,28 @@ class Principal extends StatelessWidget {
         title: Text('Registro De Mascotas'),
       ), //fin de appbar
       body: Container(
-        child: Column(
-          margin: EdgeInsets.only(
-            top: 10.0,
-            left: 10.0,
-            right: 10.0,
-          ),
-          height: 200,
-          width: 350,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/vianeyalejandra03/mis_imagenes/main/veterinaria1.jpg"), alignment: Alignment.topCenter),
-            border: Border(
-              top: BorderSide(
-                color: Colors.white,
-                width: 5.0,
-              ),
-              bottom: BorderSide(
-                color: Colors.white,
-                width: 5.0,
-              ),
+        margin: EdgeInsets.only(
+          top: 10.0,
+          left: 10.0,
+          right: 10.0,
+        ),
+        height: 200,
+        width: 350,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/vianeyalejandra03/mis_imagenes/main/veterinaria1.jpg"), alignment: Alignment.topCenter),
+          border: Border(
+            top: BorderSide(
+              color: Colors.white,
+              width: 5.0,
             ),
-          ), //fin de el decoration box
-        ), //container fin
-      ),
+            bottom: BorderSide(
+              color: Colors.white,
+              width: 5.0,
+            ),
+          ),
+        ), //fin de el decoration box
+      ), //container fin
     ); //fin de scaffold
   } //widget fin
 } //fin class principal
