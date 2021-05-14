@@ -32,7 +32,7 @@ class Principal extends StatelessWidget {
             color: Colors.blue,
             width: 1000,
             height: 570,
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(5),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
