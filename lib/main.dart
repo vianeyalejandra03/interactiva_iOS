@@ -26,7 +26,7 @@ class Principal extends StatelessWidget {
         title: Text('Registro De Mascotas'),
       ), //fin de appbar
       body: Padding(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(10),
           child: Container(
             //zona verde
             color: Colors.blue,
