@@ -126,7 +126,15 @@ class Principal extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(width: 0),
-                      
+                      Container(
+                        width: 140, height: 100,
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: 'Año.Nac',
+                            borderSide: BorderSide(color: Colors.white),
+                          ),
+                        ), //fin del textfield
+                      ), //fin de container añonac
                       SizedBox(width: 16),
                       Container(color: Colors.red, width: 140, height: 100),
                     ],
