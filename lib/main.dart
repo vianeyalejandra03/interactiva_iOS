@@ -180,7 +180,15 @@ class Principal extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(width: 0),
-                      Container(color: Colors.blue, width: 140, height: 100),
+                      Container(
+                        width: 140,
+                        height: 100,
+                        child: RaisedButton(
+                          onPressed: () => {},
+                          child: Text('Raised Button'),
+                          color: Colors.blue,
+                        ),
+                      ),
                       SizedBox(width: 16),
                       Container(color: Colors.red, width: 140, height: 100),
                     ],
