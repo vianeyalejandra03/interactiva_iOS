@@ -153,7 +153,7 @@ class Principal extends StatelessWidget {
                 ),
                 SizedBox(height: 16),
                 Container(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(5),
                   color: Colors.blue[700],
                   width: 500,
                   height: 75,
