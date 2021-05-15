@@ -59,7 +59,7 @@ class Principal extends StatelessWidget {
 
                 SizedBox(height: 20),
                 Container(
-                  height: 35,
+                  height: 50,
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: 'Introduce tu usuario',
@@ -85,7 +85,7 @@ class Principal extends StatelessWidget {
                     ), //decoracion del cuadro del usuario name
                   ), //fin textfield
                 ), //container del cuadro de texto nombre de usuario
-
+                SizedBox(height: 10),
                 Container(
                   // height: 150,
                   //width: 500,
