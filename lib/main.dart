@@ -156,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(width: 16),
                       //Container(color: Colors.blue, width: 140, height: 100),
                       Container(
-                        child: DropdownButton(  background-color: Colors.white,
+                        child: DropdownButton(
                           value: _selected,
                           hint: Text('T/Mascota'),
                           items: [
