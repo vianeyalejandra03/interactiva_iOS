@@ -185,12 +185,20 @@ class Principal extends StatelessWidget {
                         height: 100,
                         child: RaisedButton(
                           onPressed: () => {},
-                          child: Text('Raised Button'),
-                          color: Colors.blue,
+                          child: Text('Registrarse'),
+                          color: Colors.indigo,
                         ),
                       ),
                       SizedBox(width: 16),
-                      Container(color: Colors.red, width: 140, height: 100),
+                      Container(
+                        width: 140,
+                        height: 100,
+                        child: RaisedButton(
+                          onPressed: () => {},
+                          child: Text('Registrarse'),
+                          color: Colors.indigo,
+                        ),
+                      ),
                     ],
                   ),
                 ),
