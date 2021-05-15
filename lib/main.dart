@@ -153,19 +153,20 @@ class Principal extends StatelessWidget {
                         ), //fin del textfield
                       ), //fin de container añonac
                       SizedBox(width: 16),
-                      Container(
-                        child: DropDownButton(
-                          items: _lista.map((String a) {
-                            return DropDownMenuItem(value: a, child: Text(a)); //dropdown
-                          }).toList(),
-                          onChanged: (_value) => {
-                            setState(() {
-                              _vista = _value;
-                            })
-                          },
-                          hint: Text(_vista),
-                        ), //fin del drop
-                      ), //fin container del drop
+                      Container(color: Colors.blue, width: 140, height: 100),
+                      // Container(
+                      // child: DropDownButton(
+                      // items: _lista.map((String a) {
+                      // return DropDownMenuItem(value: a, child: Text(a)); //dropdown
+                      //}).toList(),
+                      //onChanged: (_value) => {
+                      //setState(() {
+                      //_vista = _value;
+                      //})
+                      //},
+                      //hint: Text(_vista),
+                      //  ), //fin del drop
+                      // ), //fin container del drop
                     ],
                   ),
                 ), //fin del container
