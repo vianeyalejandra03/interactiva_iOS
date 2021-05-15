@@ -59,21 +59,21 @@ class Principal extends StatelessWidget {
 
                 SizedBox(height: 16),
                 Container(
-                  height: 100,
+                  height: 150,
                   width: 500,
                   child: TextField(
                     decoration: InputDecoration(
                       labelText: 'Enter your username',
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Colors.white,
+                          color: Colors.indigo[400],
                           width: 5.0,
                         ),
                       ),
                       //! Change the Focused Border
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Colors.grey,
+                          color: Colors.white,
                           width: 5.0,
                         ),
                       ),
