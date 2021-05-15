@@ -23,6 +23,7 @@ class Principal extends StatelessWidget {
     'otros animales'
   ];
   String _vista = 'Seleccione el tipo de mascota';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -194,8 +195,10 @@ class Principal extends StatelessWidget {
                         width: 140,
                         height: 100,
                         child: RaisedButton(
-                          onPressed: () => {},
-                          child: Text('Registrarse'),
+                          onPressed: () => {
+                            home: Principal(),
+                          },
+                          child: Text('limpiar'),
                           color: Colors.indigo,
                         ),
                       ),
