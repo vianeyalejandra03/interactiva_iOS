@@ -188,9 +188,7 @@ class Principal extends StatelessWidget {
                           onPressed: () => {},
                           child: Text('Registrarse'),
                           color: Colors.indigo,
-                          borderRadius: const BorderRadius.all(
-                            const Radius.circular(50.0),
-                          ),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0), side: BorderSide(color: Colors.red)),
                         ),
                       ),
                       SizedBox(width: 16),
@@ -201,9 +199,6 @@ class Principal extends StatelessWidget {
                           onPressed: () => {},
                           child: Text('limpiar'),
                           color: Colors.indigo,
-                          borderRadius: const BorderRadius.all(
-                            const Radius.circular(50.0),
-                          ),
                         ),
                       ),
                     ],
