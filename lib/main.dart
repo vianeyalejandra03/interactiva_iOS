@@ -57,13 +57,13 @@ class Principal extends StatelessWidget {
                   ), //fin de el decoration box
                 ), //fin del container imagen
 
-                SizedBox(height: 16),
+                SizedBox(height: 20),
                 Container(
                   height: 150,
                   width: 500,
                   child: TextField(
                     decoration: InputDecoration(
-                      labelText: 'Enter your username',
+                      hintText: 'Introduce tu usario',
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.indigo[400],
