@@ -125,9 +125,6 @@ class Principal extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Container(TextField(
-                        decoration: InputDecoration(border: InputBorder.none, hintText: 'Please enter a search term'),
-                      )),
                       SizedBox(width: 16),
                       Container(color: Colors.blue, width: 60, height: 55),
                       SizedBox(width: 16),
