@@ -196,7 +196,7 @@ class Principal extends StatelessWidget {
                         height: 100,
                         child: RaisedButton(
                           onPressed: () => {
-                            home: Principal(),
+                            Principal(),
                           },
                           child: Text('limpiar'),
                           color: Colors.indigo,
