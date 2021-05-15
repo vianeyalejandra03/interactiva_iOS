@@ -116,46 +116,6 @@ class Principal extends StatelessWidget {
                   ), //fin textfield
                 ), //container del cuadro de texto de correo
 
-                SizedBox(height: 20),
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  color: Colors.orange,
-                  width: 250,
-                  height: 75,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Container(
-                        child: TextField(
-                          decoration: InputDecoration(
-                            hintText: 'año.Nac',
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Colors.indigo[400],
-                                width: 5.0,
-                              ),
-                              borderRadius: const BorderRadius.all(
-                                const Radius.circular(50.0),
-                              ),
-                            ),
-                            //! Change the Focused Border
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Colors.white,
-                                width: 5.0,
-                              ),
-                              borderRadius: const BorderRadius.all(
-                                const Radius.circular(50.0),
-                              ),
-                            ), //codigo al momento de tocar el cuadro
-                          ), //decoracion del cuadro del usuario correo
-                        ), //fin textfield
-                      ), //fin container text field
-                      SizedBox(width: 16),
-                      Container(color: Colors.blue, width: 60, height: 55),
-                    ],
-                  ),
-                ),
                 SizedBox(height: 16),
                 Container(
                   padding: const EdgeInsets.all(16),
