@@ -59,7 +59,7 @@ class Principal extends StatelessWidget {
 
                 SizedBox(height: 20),
                 Container(
-                  height: 5,
+                  height: 25,
                   // width: 500,
                   child: TextField(
                     decoration: InputDecoration(
