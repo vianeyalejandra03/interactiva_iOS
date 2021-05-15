@@ -82,10 +82,41 @@ class Principal extends StatelessWidget {
                         borderRadius: const BorderRadius.all(
                           const Radius.circular(50.0),
                         ),
+                      ), //codigo al momento de tocar el cuadro
+                    ), //decoracion del cuadro del usuario name
+                  ), //fin textfield
+                ), //container del cuadro de texto nombre de usuario
+
+                SizedBox(height: 5),
+                Container(
+                  height: 150,
+                  width: 500,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: 'Introduce tu correo electronico',
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.indigo[400],
+                          width: 5.0,
+                        ),
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(50.0),
+                        ),
                       ),
-                    ),
-                  ),
-                ), //container del cuadro de texto
+                      //! Change the Focused Border
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.white,
+                          width: 5.0,
+                        ),
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(50.0),
+                        ),
+                      ), //codigo al momento de tocar el cuadro
+                    ), //decoracion del cuadro del usuario correo
+                  ), //fin textfield
+                ), //container del cuadro de texto de correo
+
                 SizedBox(height: 5),
                 Container(
                   padding: const EdgeInsets.all(16),
