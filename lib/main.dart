@@ -63,6 +63,7 @@ class Principal extends StatelessWidget {
                   width: 500,
                   child: TextField(
                     decoration: InputDecoration(
+                      labelText: 'Enter your username',
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.white,
@@ -72,7 +73,7 @@ class Principal extends StatelessWidget {
                       //! Change the Focused Border
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Colors.black,
+                          color: Colors.grey,
                           width: 5.0,
                         ),
                       ),
