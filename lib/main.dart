@@ -70,7 +70,7 @@ class Principal extends StatelessWidget {
                           width: 5.0,
                         ),
                         borderRadius: const BorderRadius.all(
-                          const Radius.circular(10.0),
+                          const Radius.circular(50.0),
                         ),
                       ),
                       //! Change the Focused Border
@@ -78,6 +78,9 @@ class Principal extends StatelessWidget {
                         borderSide: BorderSide(
                           color: Colors.white,
                           width: 5.0,
+                        ),
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(50.0),
                         ),
                       ),
                     ),
