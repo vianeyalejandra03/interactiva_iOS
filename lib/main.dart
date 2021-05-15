@@ -121,14 +121,14 @@ class Principal extends StatelessWidget {
                   padding: const EdgeInsets.all(16),
                   color: Colors.indigo,
                   width: 500,
-                  height: 75,
+                  height: 70,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(width: 16),
-                      Container(color: Colors.blue, width: 200, height: 70),
+                      Container(color: Colors.blue, width: 150, height: 70),
                       SizedBox(width: 16),
-                      Container(color: Colors.red, width: 200, height: 70),
+                      Container(color: Colors.red, width: 150, height: 70),
                     ],
                   ),
                 ),
