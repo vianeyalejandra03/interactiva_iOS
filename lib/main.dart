@@ -188,6 +188,9 @@ class Principal extends StatelessWidget {
                           onPressed: () => {},
                           child: Text('Registrarse'),
                           color: Colors.indigo,
+                          borderRadius: const BorderRadius.all(
+                            const Radius.circular(50.0),
+                          ),
                         ),
                       ),
                       SizedBox(width: 16),
@@ -195,11 +198,12 @@ class Principal extends StatelessWidget {
                         width: 140,
                         height: 100,
                         child: RaisedButton(
-                          onPressed: () => {
-                            Principal(),
-                          },
+                          onPressed: () => {},
                           child: Text('limpiar'),
                           color: Colors.indigo,
+                          borderRadius: const BorderRadius.all(
+                            const Radius.circular(50.0),
+                          ),
                         ),
                       ),
                     ],
