@@ -158,11 +158,13 @@ class _HomePageState extends State<HomePage> {
                       Container(
                         child: DropdownButton(
                           value: _selected,
-                          hint: Text('Select Item'),
+                          hint: Text('T/Mascota'),
                           items: [
-                            'apple',
-                            'banana',
-                            'pear'
+                            'Perros',
+                            'Conejos',
+                            'Gatos',
+                            'Reptiles',
+                            'Otros'
                           ].map((choice) {
                             return DropdownMenuItem(
                               child: Text(choice),
