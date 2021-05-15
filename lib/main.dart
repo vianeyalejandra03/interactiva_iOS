@@ -130,9 +130,14 @@ class Principal extends StatelessWidget {
                         width: 140, height: 100,
                         child: TextField(
                           decoration: InputDecoration(
-                            fillColor: Colors.white,
                             hintText: 'Año.Nac',
                             enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.white,
+                                width: 5.0,
+                              ),
+                            ),
+                            focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: Colors.white,
                                 width: 5.0,
