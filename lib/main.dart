@@ -133,6 +133,23 @@ class Principal extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  color: Colors.orange,
+                  width: 500,
+                  height: 75,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(color: Colors.green, width: 60, height: 55),
+                      SizedBox(width: 16),
+                      Container(color: Colors.blue, width: 60, height: 55),
+                      SizedBox(width: 16),
+                      Container(color: Colors.red, width: 60, height: 55),
+                    ],
+                  ),
+                ),
               ], //fin del children widget de column widget[]
             ), //fin de column
           ) //fin de container
