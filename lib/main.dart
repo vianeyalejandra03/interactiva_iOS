@@ -63,11 +63,14 @@ class Principal extends StatelessWidget {
                   width: 500,
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Introduce tu usario',
+                      hintText: 'Introduce tu usuario',
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.indigo[400],
                           width: 5.0,
+                        ),
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(10.0),
                         ),
                       ),
                       //! Change the Focused Border
