@@ -131,7 +131,12 @@ class Principal extends StatelessWidget {
                         child: TextField(
                           decoration: InputDecoration(
                             hintText: 'Año.Nac',
-                            borderSide: BorderSide(color: Colors.white),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.white,
+                                width: 5.0,
+                              ),
+                            ),
                           ),
                         ), //fin del textfield
                       ), //fin de container añonac
