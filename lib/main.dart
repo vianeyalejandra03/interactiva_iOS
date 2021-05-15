@@ -126,9 +126,9 @@ class Principal extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(width: 16),
-                      Container(color: Colors.blue, width: 120, height: 70),
+                      Container(color: Colors.blue, width: 120, height: 100),
                       SizedBox(width: 16),
-                      Container(color: Colors.red, width: 120, height: 70),
+                      Container(color: Colors.red, width: 120, height: 100),
                     ],
                   ),
                 ),
