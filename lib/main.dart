@@ -11,18 +11,18 @@ class MiInteractivaApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: Principal(),
+      home: HomePage(),
     ); //fin de material app
   } //fin de widget interactiva app
 } //fin de interactiva app
 
-class Principal extends StatelessWidget {
-  var _lista = [
-    'perros',
-    'gatos',
-    'otros animales'
-  ];
-  String _vista = 'Seleccione el tipo de mascota';
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  String _selected;
 
   @override
   Widget build(BuildContext context) {
@@ -157,13 +157,23 @@ class Principal extends StatelessWidget {
                       //Container(color: Colors.blue, width: 140, height: 100),
                       Container(
                         child: DropdownButton(
-                          value: _selectedGender,
-                          items: _dropDownItem(),
+                          value: _selected,
+                          hint: Text('Select Item'),
+                          items: [
+                            'apple',
+                            'banana',
+                            'pear'
+                          ].map((choice) {
+                            return DropdownMenuItem(
+                              child: Text(choice),
+                              value: choice,
+                            );
+                          }).toList(),
                           onChanged: (value) {
-                            _selectedGender = value;
-                            setState(() {});
+                            setState(() {
+                              _selected = value;
+                            });
                           },
-                          hint: Text('Select Gender'),
                         ),
                       ), //fin container del drop
                     ],
