@@ -160,28 +160,6 @@ class Principal extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.all(20.0),
-                        child: DropdownButton(
-                            value: _value,
-                            items: [
-                              DropdownMenuItem(
-                                child: Text("First Item"),
-                                value: 1,
-                              ),
-                              DropdownMenuItem(
-                                child: Text("Second Item"),
-                                value: 2,
-                              ),
-                              DropdownMenuItem(child: Text("Third Item"), valor: 3),
-                              DropdownMenuItem(child: Text("Cuarto elemento"), valor: 4)
-                            ],
-                            onChanged: (value) {
-                              setState(() {
-                                _value = valor;
-                              });
-                            }),
-                      ),
                       SizedBox(width: 16),
                       Container(color: Colors.blue, width: 60, height: 55),
                       SizedBox(width: 16),
