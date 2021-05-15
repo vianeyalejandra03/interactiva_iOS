@@ -157,16 +157,14 @@ class Principal extends StatelessWidget {
                       //Container(color: Colors.blue, width: 140, height: 100),
                       Container(
                         child: DropdownButton(
-                          items: _lista.map((String a) {
-                            return DropdownMenuItem(value: a, child: Text(a)); //dropdown
-                          }).toList(),
-                          onChanged: (_value) => {
-                            setState(() {
-                              _vista = _value;
-                            })
+                          value: _selectedGender,
+                          items: _dropDownItem(),
+                          onChanged: (value) {
+                            _selectedGender = value;
+                            setState(() {});
                           },
-                          hint: Text(_vista),
-                        ), //fin del drop
+                          hint: Text('Select Gender'),
+                        ),
                       ), //fin container del drop
                     ],
                   ),
@@ -212,3 +210,17 @@ class Principal extends StatelessWidget {
     ); //fin de scaffold
   } //widget fin
 } //fin class principal
+
+List<DropdownMenuItem<String>> _dropDownItem() {
+  List<String> ddl = [
+    "Male",
+    "Female",
+    "Others"
+  ];
+  return ddl
+      .map((value) => DropdownMenuItem(
+            value: value,
+            child: Text(value),
+          ))
+      .toList();
+}
