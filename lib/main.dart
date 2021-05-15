@@ -17,6 +17,12 @@ class MiInteractivaApp extends StatelessWidget {
 } //fin de interactiva app
 
 class Principal extends StatelessWidget {
+  var _lista = [
+    'perros',
+    'gatos',
+    'otros animales'
+  ];
+  String _vista = 'Seleccione el tipo de mascota';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -147,10 +153,22 @@ class Principal extends StatelessWidget {
                         ), //fin del textfield
                       ), //fin de container añonac
                       SizedBox(width: 16),
-                      Container(color: Colors.red, width: 140, height: 100),
+                      Container(
+                        child: DropDownButton(
+                          items: _lista.map((String a) {
+                            return DropDownMenuItem(value: a, child: Text(a)); //dropdown
+                          }).toList(),
+                          onChanged: (_value) => {
+                            setState(() {
+                              _vista = _value;
+                            })
+                          },
+                          hint: Text(_vista),
+                        ), //fin del drop
+                      ), //fin container del drop
                     ],
                   ),
-                ),
+                ), //fin del container
                 SizedBox(height: 16),
                 Container(
                   padding: const EdgeInsets.all(5),
