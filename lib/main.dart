@@ -87,7 +87,6 @@ class Principal extends StatelessWidget {
                   ), //fin textfield
                 ), //container del cuadro de texto nombre de usuario
 
-                SizedBox(height: 5),
                 Container(
                   // height: 150,
                   //width: 500,
