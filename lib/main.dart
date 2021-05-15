@@ -142,7 +142,7 @@ class Principal extends StatelessWidget {
                                 color: Colors.white,
                                 width: 5.0,
                               ),
-                            ),
+                            ), //accion al dar click
                           ),
                         ), //fin del textfield
                       ), //fin de container añonac
@@ -154,13 +154,34 @@ class Principal extends StatelessWidget {
                 SizedBox(height: 16),
                 Container(
                   padding: const EdgeInsets.all(16),
-                  color: Colors.orange,
+                  color: Colors.blue[700],
                   width: 500,
                   height: 75,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Container(color: Colors.green, width: 60, height: 55),
+                      Container(
+                        padding: EdgeInsets.all(20.0),
+                        child: DropdownButton(
+                            value: _value,
+                            items: [
+                              DropdownMenuItem(
+                                child: Text("First Item"),
+                                value: 1,
+                              ),
+                              DropdownMenuItem(
+                                child: Text("Second Item"),
+                                value: 2,
+                              ),
+                              DropdownMenuItem(child: Text("Third Item"), valor: 3),
+                              DropdownMenuItem(child: Text("Cuarto elemento"), valor: 4)
+                            ],
+                            onChanged: (value) {
+                              setState(() {
+                                _value = valor;
+                              });
+                            }),
+                      ),
                       SizedBox(width: 16),
                       Container(color: Colors.blue, width: 60, height: 55),
                       SizedBox(width: 16),
